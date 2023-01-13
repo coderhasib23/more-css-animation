@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container-inner {
+        background-color: skyblue;
+        height: 500px;
+        width: 150px;
+        border: 1px solid yellow;
+      }
+      .container {
+        background-color: brown;
+        width: 150px;
+      }
+
+      /* practice */
+      .container,
+      .inner {
+        width: 150px;
+        height: 150px;
+        border: 2px solid khaki;
+      }
+
+      .container {
+        background-color: lightblue;
+      }
+
+      .inner {
+        background-color: lightcoral;
+        transform: scale(0.55) rotate(45deg) translate(100px, -50px);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>scale = zoom in out kora (0.75)</li>
+      <li>Rotate = rotate(45deg)</li>
+      <li>translate = reposition an element horizontal or vertical</li>
+      <li>All action can take x-axis and y-axis</li>
+      <li>Example: translate(50px, 50px)</li>
+    </ul>
+    <mark
+      >For multiple items add a space between them - transform: scale() rotate (
+      ) translate ( )</mark
+    >
+    <h1>Transformer I am coming</h1>
+    <div class="box container">
+      <div class="inner">box-1</div>
+    </div>
+    <div class="box container">
+      <div class="inner">box-2</div>
+    </div>
+    <div class="box container">
+      <div class="inner">box-3</div>
+    </div>
+  </body>
+  <footer>
+    <!-- HTML Button !-->
+    <button class="button-64" role="button">
+      <a href="transform.html">Transform</a>
+    </button>
+    <!-- HTML Button !-->
+    <button class="button-64" role="button">
+      <a href="transition.html">Animation</a>
+    </button>
+  </footer>
+</html>
