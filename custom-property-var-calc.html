@@ -4,7 +4,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>custom property</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* visibility area */
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid royalblue;
+      }
+      #box-3 {
+        /* display: none; */
+        visibility: hidden;
+      }
+
+      /* custom variable */
+      :root {
+        --primary-color: red;
+        --single-border: 1px solid green;
+        --secondary-color: purple;
+      }
+      #heading-3 {
+        color: var(--primary-color);
+        border: var(--single-border);
+        background-color: var(--secondary-color);
+      }
+      #heading-2 {
+        background-color: var(--secondary-color);
+        width: calc(100% - 400px);
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>
+        7-7 CSS Custom property and use var, calc, visibility hidden vs display
+        none
+      </h1>
+    </header>
+    <main>
+      <h3>visibility</h3>
+      <p>
+        display none means there is noting, visibility hidden means he is not
+        there but space
+      </p>
+      <div class="visibility">
+        <div class="box" id="box-1">
+          <h3>box-1</h3>
+        </div>
+        <div class="box" id="box-2">
+          <h3>box-2</h3>
+        </div>
+        <div class="box" id="box-3">
+          <h3>box-3</h3>
+        </div>
+        <div class="box" id="box-4">
+          <h3>box-4</h3>
+        </div>
+      </div>
+      <section class="code">
+        <pre>
+              <code>
+                #box-3 {
+                    /* display: none; */
+                    visibility: hidden;
+                  }
+              </code>
+            </pre>
+      </section>
+      <!-- Coustom property / variable -->
+      <h3><mark> Custom Variable and calc </mark></h3>
+      <div class="custom-var">
+        <h1 class="heading" id="heading-1">my strong heading-1</h1>
+        <h1 class="heading" id="heading-2">my strong heading-2</h1>
+        <h1 class="heading" id="heading-3">my strong heading-3</h1>
+        <h1 class="heading" id="heading-4">my strong heading-4</h1>
+      </div>
+      <section class="code">
+        <pre>
+              <code>
+                :root {
+                    --primary-color: red;
+                    --single-border: 1px solid green;
+                    --secondary-color: purple;
+                  }
+                  #heading-3 {
+                    color: var(--primary-color);
+                    border: var(--single-border);
+                    background-color: var(--secondary-color);
+                    width: calc(100% - 400px); (this is calc)
+                  }
+              </code>
+            </pre>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <!-- HTML Button !-->
+    <button class="button-64" role="button">
+      <a href="css-ball-bounce.html">Ball bounce</a>
+    </button>
+    <br />
+    <!-- HTML Button !-->
+    <button class="button-64" role="button">
+      <a href="css-specificity.html">specificity</a>
+    </button>
+  </footer>
 </html>
