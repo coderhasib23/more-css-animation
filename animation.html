@@ -14,17 +14,24 @@
         width: 50px;
         border-radius: 25px;
         background-color: red;
+        position: relative;
+        left: 510px;
+        transition: transform 1s ease-out 0.3s;
       }
       .bat {
-        transition: transform 10s;
+        transition: transform 0.2s ease-in;
       }
       .field:hover .bat {
         transform: rotate(-60deg);
         transform-origin: top right;
       }
+      .field:hover .ball {
+        transform: translate(800px, -200px);
+      }
     </style>
   </head>
   <body>
+    <h2>7-5 Cricket match animation using transition and transform</h2>
     <div class="field">
       <img class="bat" src="images/bat.png" alt="" />
       <div class="ball"></div>
@@ -38,7 +45,7 @@
     <br />
     <!-- HTML Button !-->
     <button class="button-64" role="button">
-      <a href=".......">Animation</a>
+      <a href="css-ball-bounce.html">CSS Ball Bounce</a>
     </button>
   </footer>
 </html>
